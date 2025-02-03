@@ -24,7 +24,6 @@ Esta atividade tem como objetivo usar o Raspberry Pi Pico W para compreender o f
 - [Como Executar](#como-executar)
   - [Pré-requisitos](#pré-requisitos)
   - [Passos para Execução](#passos-para-execução)
-- [Testes Realizados](#testes-realizados)
 - [Vídeo Demonstração](#vídeo-demonstração)
 - [Autores](#autores-do-subgrupo-3)
 
@@ -86,7 +85,7 @@ O projeto deve cumprir os seguintes requisitos:
 
    
 ## Vídeo Demonstração
-
+  https://drive.google.com/file/d/1tf3agYQmGvS8drAesiLFdB9GHzPUP4jk/view?usp=drive_link
 ## Autor
 
 <table>

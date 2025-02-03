@@ -42,6 +42,7 @@
         "pio_matrix.pio.h": "c",
         "clocks.h": "c",
         "stdio.h": "c",
-        "pio.h": "c"
+        "pio.h": "c",
+        "bootrom.h": "c"
     }
 }
