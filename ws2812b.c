@@ -2,6 +2,8 @@
 #include "pico/stdlib.h"
 
 #include "hardware/pio.h"
+#include "hardware/timer.h"
+
 #include "pico/bootrom.h"
 
 #include "features/PIO.c"
@@ -33,7 +35,6 @@ void acao(int numero);
 int main(){
     struct repeating_timer timer;
     int contador = 0;
-
 
     // Inicializa entradas e saídas.
     stdio_init_all();
@@ -153,20 +154,10 @@ void callback_botao(uint gpio, uint32_t events){
 
 //piscar a led
 bool alterna_led(struct repeating_timer *t) {
-    if(gpio_get(LED_R) == true){
-        gpio_put(LED_R, !gpio_get(LED_R));
-        gpio_put(LED_B, !gpio_get(LED_B));
-    }
-    else if (gpio_get(LED_B) == true){
-        gpio_put(LED_B, !gpio_get(LED_B));
-        gpio_put(LED_G, !gpio_get(LED_G));
-    }
-    else if (gpio_get(LED_G) == true){
-        gpio_put(LED_G, !gpio_get(LED_G));
-        gpio_put(LED_R, !gpio_get(LED_R));
-    }
+    if(gpio_get(LED_R) == true)
+        gpio_put(LED_R, false);
     else
-        gpio_put(LED_R, !gpio_get(LED_R));
+        gpio_put(LED_R, true);
     return true;
 }
 

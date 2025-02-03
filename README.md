@@ -59,8 +59,8 @@ O projeto deve cumprir os seguintes requisitos:
 - **funcoes.c**: Funções auxiliares para controle do sistema.
 
 ## Funcionalidades 
-
-- **Tecla A**: Desliga todos os LEDs.
+- **Tecla Next**: Muda o número para seu próximo.
+- **Tecla Previous**: Muda o número para seu anterior.
 
 
 ## Como Executar
